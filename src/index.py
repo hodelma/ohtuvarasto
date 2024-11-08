@@ -4,10 +4,19 @@ from varasto import Varasto
 def main():
     mehua = Varasto(100.0)
     olutta = Varasto(100.0, 20.2)
-
+    x=1
+    y=2
+    if x<y:
+        print("joo")
+        if y<x:
+            print("yes")
+            if y==x:
+                print("")
+    "ujfesjfesifesoijefsijefijefijijfeijoesfoijefsoijefsoijeojfsijeofsijoefsoijefsi"
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
+
 
     print("Olut getterit:")
     print(f"saldo = {olutta.saldo}")
@@ -52,6 +61,8 @@ def main():
     saatiin = mehua.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
     print(f"Mehuvarasto: {mehua}")
+    return "yes"
+    return "no"
 
 
 if __name__ == "__main__":
