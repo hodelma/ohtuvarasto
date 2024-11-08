@@ -16,7 +16,7 @@ class Varasto:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
 
-    # huom: ominaisuus voidaan myös laskea. 
+    # huom: ominaisuus voidaan myös laskea.
     # Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
@@ -29,7 +29,7 @@ class Varasto:
         else:
             self.saldo = self.tilavuus
 
-    def ota_varastosta(self, maara): #pylint: disable=max-returns
+    def ota_varastosta(self, maara): #pylint: disable=too-many-return-statements
         if maara < 0:
             return 0.0
         if maara > self.saldo:
